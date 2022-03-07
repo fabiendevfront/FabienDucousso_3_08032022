@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/css/scss/main.scss:assets/css/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiendevfront/FabienDucousso_3_08032022.git"
+  },
+  "author": "Fabien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiendevfront/FabienDucousso_3_08032022/issues"
+  },
+  "homepage": "https://github.com/fabiendevfront/FabienDucousso_3_08032022#readme"
+}
