@@ -366,9 +366,37 @@ body {
 a {
   text-decoration: none;
 }
+a:hover, a:focus {
+  color: #9356DC;
+}
 
-h1 {
+.title {
+  font-weight: 700;
+  line-height: 1;
+}
+.title--big {
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+.title--medium {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+.title--small {
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+.title--menus {
   font-family: "Shrikhand", cursive;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
