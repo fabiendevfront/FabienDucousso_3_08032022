@@ -360,14 +360,16 @@ body {
   font-size: 15px;
   font-size: 0.9375rem;
   font-weight: 500;
+  color: #000000;
   line-height: 20px;
 }
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 a:hover, a:focus {
-  color: #9356DC;
+  color: #000000;
 }
 
 .title {

@@ -6,15 +6,17 @@ body {
     font-family: variables.$font-text;
     @include mixins.fontSize(15px);
     font-weight: 500;
+    color: variables.$dark;
     line-height: 20px;
 }
 
 a {
 	text-decoration: none;
+    color: variables.$dark;
 
     &:hover,
 	&:focus {
-		color: variables.$primary-color;
+		color: variables.$dark;
 	}
 }
 
