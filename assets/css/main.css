@@ -413,6 +413,23 @@ a:hover, a:focus {
   height: 40px;
 }
 
+.btn {
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  padding: 5% 7%;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 3px 3px 12px #adadad;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+.btn:hover {
+  opacity: 0.85;
+  transition: all 0.5s ease-out;
+  box-shadow: 3px 3px 18px #3d3b3b;
+  cursor: pointer;
+}
+
 .localisation {
   width: 100%;
   background-color: #EAEAEA;
