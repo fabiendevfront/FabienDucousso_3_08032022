@@ -2,8 +2,9 @@
 @use '../abstracts/variables';
 
 .btn {
+    max-width: 270px;
     background: linear-gradient(175deg, variables.$secondary-color 10%, variables.$primary-color 90%);
-    padding: 5% 7%;
+    padding: 22px 30px;
     border: none;
     border-radius: 35px;
     box-shadow: 3px 3px 12px #adadad;

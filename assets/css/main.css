@@ -414,8 +414,9 @@ a:hover, a:focus {
 }
 
 .btn {
+  max-width: 270px;
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
-  padding: 5% 7%;
+  padding: 22px 30px;
   border: none;
   border-radius: 35px;
   box-shadow: 3px 3px 12px #adadad;
