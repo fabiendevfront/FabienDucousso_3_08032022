@@ -1,0 +1,6 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.heart {
+    @include mixins.fontSize(30px);
+}

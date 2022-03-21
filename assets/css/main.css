@@ -532,6 +532,11 @@ a:hover, a:focus {
   right: 30px;
 }
 
+.heart {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
 .localisation {
   width: 100%;
   background-color: #EAEAEA;
