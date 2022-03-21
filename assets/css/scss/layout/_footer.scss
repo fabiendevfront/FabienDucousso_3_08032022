@@ -1,0 +1,42 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.footer {
+    background-color: #353535;
+    @include mixins.fontSize(19px);
+    padding: 20px 5%;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        color: #ffffff;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #ffffff;
+
+        &:hover {
+            color: variables.$primary-color;
+        }
+    }
+
+    &__icon {
+        margin-right: 15px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

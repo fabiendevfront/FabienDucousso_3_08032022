@@ -26,7 +26,6 @@ a {
 
     &--big {
         @include mixins.fontSize(35px);
-        font-weight: 900;
     }
 
     &--medium {
@@ -37,9 +36,9 @@ a {
         @include mixins.fontSize(25px);
     }
 
-    &--menus {
+    &--shrik {
         font-family: variables.$font-title;
-        @include mixins.fontSize(40px);
+        font-weight: 300;
     }
 }
 

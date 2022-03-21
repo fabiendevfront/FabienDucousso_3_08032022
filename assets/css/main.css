@@ -379,7 +379,6 @@ a:hover, a:focus {
 .title--big {
   font-size: 35px;
   font-size: 2.1875rem;
-  font-weight: 900;
 }
 .title--medium {
   font-size: 30px;
@@ -389,10 +388,9 @@ a:hover, a:focus {
   font-size: 25px;
   font-size: 1.5625rem;
 }
-.title--menus {
+.title--shrik {
   font-family: "Shrikhand", cursive;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .subtitle {
@@ -412,6 +410,40 @@ a:hover, a:focus {
 }
 .header__logo {
   height: 40px;
+}
+
+.footer {
+  background-color: #353535;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  padding: 20px 5%;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.footer__item {
+  margin-bottom: 15px;
+}
+.footer__title {
+  color: #ffffff;
+}
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+}
+.footer__link:hover {
+  color: #9356DC;
+}
+.footer__icon {
+  margin-right: 15px;
+}
+.footer__text {
+  margin: 0;
 }
 
 .btn {
