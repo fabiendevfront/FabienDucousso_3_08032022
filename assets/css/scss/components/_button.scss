@@ -17,4 +17,9 @@
         box-shadow: 3px 3px 18px #3d3b3b;
         cursor: pointer;
     }
+
+    @include mixins.desktop-break {
+        max-width: none;
+        @include mixins.fontSize(25px);
+    }
 }

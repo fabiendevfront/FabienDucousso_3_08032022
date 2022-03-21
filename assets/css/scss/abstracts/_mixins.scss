@@ -1,3 +1,6 @@
+@use '../abstracts/variables';
+
+// TYPOGRAPHY
 @function calculateRem($size) {
 	$remSize: calc($size / 16px);
 	@return #{$remSize}rem;
@@ -6,4 +9,17 @@
 @mixin fontSize($size) {
 	font-size: $size;
 	font-size: calculateRem($size);
+}
+
+// RESPONSIVE
+@mixin tablet-break {
+	@media screen and (min-width: map-get(variables.$breakpoints, tablet)) {
+		@content;
+	}
+}
+
+@mixin desktop-break {
+	@media screen and (min-width: map-get(variables.$breakpoints, desktop)) {
+		@content;
+	}
 }

@@ -380,6 +380,12 @@ a:hover, a:focus {
   font-size: 35px;
   font-size: 2.1875rem;
 }
+@media screen and (min-width: 992px) {
+  .title--big {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
 .title--medium {
   font-size: 30px;
   font-size: 1.875rem;
@@ -399,6 +405,12 @@ a:hover, a:focus {
   font-weight: 300;
   line-height: 1;
 }
+@media screen and (min-width: 992px) {
+  .subtitle {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
 
 .header {
   width: 100%;
@@ -411,6 +423,11 @@ a:hover, a:focus {
 .header__logo {
   height: 40px;
 }
+@media screen and (min-width: 992px) {
+  .header__logo {
+    height: 55px;
+  }
+}
 
 .footer {
   background-color: #353535;
@@ -418,17 +435,39 @@ a:hover, a:focus {
   font-size: 1.1875rem;
   padding: 20px 5%;
 }
+@media screen and (min-width: 992px) {
+  .footer {
+    padding-bottom: 40px;
+    font-size: 23px;
+    font-size: 1.4375rem;
+  }
+}
+.footer__title {
+  color: #ffffff;
+  margin: 20px 0 30px 0;
+}
+@media screen and (min-width: 992px) {
+  .footer__title {
+    font-size: 50px;
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 .footer__container {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 992px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .footer__item {
   margin-bottom: 15px;
-}
-.footer__title {
-  color: #ffffff;
 }
 .footer__link {
   display: flex;
@@ -441,6 +480,12 @@ a:hover, a:focus {
 }
 .footer__icon {
   margin-right: 15px;
+}
+@media screen and (min-width: 992px) {
+  .footer__icon {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
 }
 .footer__text {
   margin: 0;
@@ -463,19 +508,21 @@ a:hover, a:focus {
   box-shadow: 3px 3px 18px #3d3b3b;
   cursor: pointer;
 }
+@media screen and (min-width: 992px) {
+  .btn {
+    max-width: none;
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
 
-.functioning-item {
-  width: 100%;
+.func-comp {
   display: flex;
   align-items: center;
   font-size: 20px;
   font-size: 1.25rem;
-  margin-bottom: 35px;
 }
-.functioning-item:last-child {
-  margin-bottom: 0;
-}
-.functioning-item__order {
+.func-comp__order {
   position: relative;
   width: 35px;
   height: 35px;
@@ -486,63 +533,62 @@ a:hover, a:focus {
   color: #FFFFFF;
   text-align: center;
 }
-.functioning-item__desc {
+.func-comp__desc {
   width: 100%;
-  padding: 15px 8% 15px 10%;
+  padding: 31px 20px 31px 25px;
   background-color: #F6F6F6;
   display: flex;
   align-items: center;
   border-radius: 30px;
   box-shadow: 3px 3px 12px #adadad;
 }
-.functioning-item__icon {
+@media screen and (min-width: 992px) {
+  .func-comp__desc {
+    padding: 31px 5% 31px 10%;
+  }
+}
+.func-comp__icon {
   font-size: 28px;
   font-size: 1.75rem;
   color: #7E7E7E;
-  margin-right: 8%;
+  margin-right: 6%;
 }
-.functioning-item__txt {
+.func-comp__txt {
   margin: 0;
 }
-.functioning-item--purple .functioning-item__desc {
+.func-comp--purple .func-comp__desc {
   background-color: #F5EDFF;
 }
-.functioning-item--purple .functioning-item__icon {
+.func-comp--purple .func-comp__icon {
   color: #9356DC;
 }
 
-.restaurant-card {
+.rest-comp {
   position: relative;
-  width: 100%;
-  height: 350px;
-  margin-bottom: 35px;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 1px 1px 12px #adadad;
 }
-.restaurant-card:last-child {
-  margin-bottom: 0;
-}
-.restaurant-card:hover {
+.rest-comp:hover {
   transition: all 0.5s ease-out;
   box-shadow: 1px 1px 20px #3d3b3b;
 }
-.restaurant-card:hover img {
+.rest-comp:hover img {
   opacity: 0.7;
   transition: all 0.3s ease-out;
 }
-.restaurant-card__picture {
+.rest-comp__picture {
   position: relative;
   width: 100%;
   height: 70%;
 }
-.restaurant-card__picture img {
+.rest-comp__picture img {
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.restaurant-card__new {
+.rest-comp__new {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -553,22 +599,22 @@ a:hover, a:focus {
   padding: 10px 20px;
   border-radius: 4px;
 }
-.restaurant-card__description {
+.rest-comp__desc {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
 }
-.restaurant-card__title {
+.rest-comp__title {
   margin: 0 0 12px 0;
 }
-.restaurant-card__localisation {
+.rest-comp__localisation {
   margin: 0;
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: 400;
 }
-.restaurant-card__heart {
+.rest-comp__heart {
   position: absolute;
   bottom: 40px;
   right: 30px;
@@ -598,6 +644,12 @@ a:hover, a:focus {
   font-size: 1.125rem;
   margin-right: 10px;
 }
+@media screen and (min-width: 992px) {
+  .localisation__icon {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
 .localisation__input {
   width: 150px;
   background-color: #EAEAEA;
@@ -617,6 +669,13 @@ a:hover, a:focus {
 .localisation__input:focus::placeholder {
   opacity: 0;
 }
+@media screen and (min-width: 992px) {
+  .localisation__input {
+    width: 185px;
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
 
 .explore {
   width: 100%;
@@ -627,11 +686,35 @@ a:hover, a:focus {
   align-items: center;
   text-align: center;
 }
+@media screen and (min-width: 992px) {
+  .explore {
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+  }
+}
+.explore__head {
+  padding: 15px 3%;
+}
+@media screen and (min-width: 992px) {
+  .explore__head {
+    width: 56%;
+    max-width: 800px;
+    margin-right: 3%;
+  }
+}
 .explore__title {
   margin: 0 0 20px 0;
 }
 .explore__subtitle {
   margin: 0 0 30px 0;
+}
+@media screen and (min-width: 992px) {
+  .explore__subtitle {
+    width: 80%;
+    line-height: 1.2;
+    margin: 0;
+  }
 }
 
 .functioning {
@@ -652,6 +735,25 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 992px) {
+  .functioning__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.functioning__item {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.functioning__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .functioning__item {
+    width: 32%;
+    margin: 0;
+  }
+}
 
 .restaurant {
   width: 100%;
@@ -669,6 +771,29 @@ a:hover, a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .restaurant__container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+.restaurant__card {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 35px;
+}
+.restaurant__card:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .restaurant__card {
+    width: 48%;
+    height: 450px;
+  }
+  .restaurant__card:nth-child(n+3) {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

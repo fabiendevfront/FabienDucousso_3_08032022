@@ -1,3 +1,6 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
 .header {
     width: 100%;
     padding: 40px 3% 20px 3%;
@@ -8,5 +11,9 @@
 
     &__logo {
         height: 40px;
+
+        @include mixins.desktop-break {
+            height: 55px;
+        }
     }
 }

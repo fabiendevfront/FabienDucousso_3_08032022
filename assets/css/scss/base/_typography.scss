@@ -26,6 +26,10 @@ a {
 
     &--big {
         @include mixins.fontSize(35px);
+
+        @include mixins.desktop-break {
+            @include mixins.fontSize(50px);
+        }
     }
 
     &--medium {
@@ -46,4 +50,8 @@ a {
     @include mixins.fontSize(25px);
     font-weight: 300;
     line-height: 1;
+
+    @include mixins.desktop-break {
+        @include mixins.fontSize(32px);
+    }
 }

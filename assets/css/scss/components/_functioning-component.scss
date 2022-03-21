@@ -1,16 +1,10 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
 
-.functioning-item {
-    width: 100%;
+.func-comp {
     display: flex;
     align-items: center;
     @include mixins.fontSize(20px);
-    margin-bottom: 35px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 
     &__order {
         position: relative;
@@ -26,18 +20,22 @@
 
     &__desc {
         width: 100%;
-        padding: 15px 8% 15px 10%;
+        padding: 31px 20px 31px 25px;
         background-color: #F6F6F6;
         display: flex;
         align-items: center;
         border-radius: 30px;
         box-shadow: 3px 3px 12px #adadad;
+
+        @include mixins.desktop-break {
+            padding: 31px 5% 31px 10%;
+        }
     }
 
     &__icon {
         @include mixins.fontSize(28px);
         color: #7E7E7E;
-        margin-right: 8%;
+        margin-right: 6%;
     }
 
     &__txt {
@@ -45,11 +43,11 @@
     }
 
     &--purple {
-        .functioning-item__desc {
+        .func-comp__desc {
             background-color: #F5EDFF;
         }
 
-        .functioning-item__icon {
+        .func-comp__icon {
             color: variables.$primary-color;
         }
     }
