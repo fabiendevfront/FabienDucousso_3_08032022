@@ -5,10 +5,14 @@
     position: relative;
     width: 100%;
     height: 350px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 1px 1px 12px #adadad;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     &:hover {
         transition: all 0.5s ease-out;
@@ -29,13 +33,14 @@
     }
 
     &__new {
+        position: absolute;
+        top: 20px;
+        right: 20px;
         background-color: #99E2D0;
         color: #008766;
         @include mixins.fontSize(19px);
         padding: 10px 20px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        border-radius: 4px;
     }
 
     &__description {

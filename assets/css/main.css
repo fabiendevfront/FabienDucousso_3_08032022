@@ -482,10 +482,13 @@ a:hover, a:focus {
   position: relative;
   width: 100%;
   height: 350px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 1px 1px 12px #adadad;
+}
+.restaurant-card:last-child {
+  margin-bottom: 0;
 }
 .restaurant-card:hover {
   transition: all 0.5s ease-out;
@@ -503,14 +506,15 @@ a:hover, a:focus {
   object-fit: cover;
 }
 .restaurant-card__new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background-color: #99E2D0;
   color: #008766;
   font-size: 19px;
   font-size: 1.1875rem;
   padding: 10px 20px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  border-radius: 4px;
 }
 .restaurant-card__description {
   display: flex;
