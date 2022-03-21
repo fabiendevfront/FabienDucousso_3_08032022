@@ -56,7 +56,8 @@
 
     &__localisation {
         margin: 0;
-        @include mixins.fontSize(23px);
+        @include mixins.fontSize(22px);
+        font-weight: 400;
     }
 
     &__heart {

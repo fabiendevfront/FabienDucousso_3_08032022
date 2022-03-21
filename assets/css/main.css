@@ -560,8 +560,9 @@ a:hover, a:focus {
 }
 .restaurant-card__localisation {
   margin: 0;
-  font-size: 23px;
-  font-size: 1.4375rem;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 400;
 }
 .restaurant-card__heart {
   position: absolute;
@@ -570,8 +571,8 @@ a:hover, a:focus {
 }
 
 .heart {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 35px;
+  font-size: 2.1875rem;
 }
 
 .localisation {
