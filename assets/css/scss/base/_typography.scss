@@ -34,10 +34,18 @@ a {
 
     &--medium {
         @include mixins.fontSize(30px);
+
+        @include mixins.desktop-break {
+            @include mixins.fontSize(38px);
+        }
     }
 
     &--small {
         @include mixins.fontSize(25px);
+
+        @include mixins.desktop-break {
+            @include mixins.fontSize(32px);
+        }
     }
 
     &--shrik {

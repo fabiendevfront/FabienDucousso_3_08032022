@@ -390,9 +390,21 @@ a:hover, a:focus {
   font-size: 30px;
   font-size: 1.875rem;
 }
+@media screen and (min-width: 992px) {
+  .title--medium {
+    font-size: 38px;
+    font-size: 2.375rem;
+  }
+}
 .title--small {
   font-size: 25px;
   font-size: 1.5625rem;
+}
+@media screen and (min-width: 992px) {
+  .title--small {
+    font-size: 32px;
+    font-size: 2rem;
+  }
 }
 .title--shrik {
   font-family: "Shrikhand", cursive;
@@ -578,7 +590,6 @@ a:hover, a:focus {
   transition: all 0.3s ease-out;
 }
 .rest-comp__picture {
-  position: relative;
   width: 100%;
   height: 70%;
 }
@@ -600,29 +611,31 @@ a:hover, a:focus {
   border-radius: 4px;
 }
 .rest-comp__desc {
+  height: 30%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
 }
 .rest-comp__title {
   margin: 0 0 12px 0;
 }
 .rest-comp__localisation {
   margin: 0;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
-}
-.rest-comp__heart {
-  position: absolute;
-  bottom: 40px;
-  right: 30px;
 }
 
 .heart {
-  font-size: 35px;
-  font-size: 2.1875rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 992px) {
+  .heart {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
 }
 
 .localisation {

@@ -2,5 +2,9 @@
 @use '../abstracts/variables';
 
 .heart {
-    @include mixins.fontSize(35px);
+    @include mixins.fontSize(40px);
+
+    @include mixins.desktop-break {
+        @include mixins.fontSize(50px);
+    }
 }
