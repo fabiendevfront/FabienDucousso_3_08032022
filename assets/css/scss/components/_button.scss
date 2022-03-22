@@ -18,8 +18,12 @@
         cursor: pointer;
     }
 
-    @include mixins.desktop-break {
+    @include mixins.tablet-break {
         max-width: none;
+        @include mixins.fontSize(22px);
+    }
+
+    @include mixins.desktop-break {
         @include mixins.fontSize(25px);
     }
 }

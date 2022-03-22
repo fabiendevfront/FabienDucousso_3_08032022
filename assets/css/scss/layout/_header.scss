@@ -12,6 +12,10 @@
     &__logo {
         height: 40px;
 
+        @include mixins.tablet-break {
+            height: 50px;
+        }
+
         @include mixins.desktop-break {
             height: 55px;
         }

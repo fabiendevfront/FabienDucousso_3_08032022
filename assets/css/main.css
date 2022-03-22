@@ -447,6 +447,11 @@ a:hover, a:focus {
 .header__logo {
   height: 40px;
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    height: 50px;
+  }
+}
 @media screen and (min-width: 992px) {
   .header__logo {
     height: 55px;
@@ -459,6 +464,12 @@ a:hover, a:focus {
   font-size: 1.1875rem;
   padding: 20px 5%;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 23px;
+    font-size: 1.4375rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .footer {
     padding-bottom: 40px;
@@ -470,11 +481,17 @@ a:hover, a:focus {
   color: #ffffff;
   margin: 20px 0 30px 0;
 }
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 40px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .footer__title {
     font-size: 50px;
     font-size: 3.125rem;
-    text-align: center;
     margin-bottom: 50px;
   }
 }
@@ -483,6 +500,11 @@ a:hover, a:focus {
   flex-direction: column;
   margin: 0;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 992px) {
   .footer__container {
@@ -532,9 +554,15 @@ a:hover, a:focus {
   box-shadow: 3px 3px 18px #3d3b3b;
   cursor: pointer;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .btn {
     max-width: none;
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn {
     font-size: 25px;
     font-size: 1.5625rem;
   }
@@ -545,6 +573,18 @@ a:hover, a:focus {
   align-items: center;
   font-size: 20px;
   font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .func-comp {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .func-comp {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
 }
 .func-comp__order {
   position: relative;
@@ -675,7 +715,7 @@ a:hover, a:focus {
   font-size: 1.125rem;
   margin-right: 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .localisation__icon {
     font-size: 22px;
     font-size: 1.375rem;
@@ -700,7 +740,7 @@ a:hover, a:focus {
 .localisation__input:focus::placeholder {
   opacity: 0;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .localisation__input {
     width: 185px;
     font-size: 22px;
@@ -784,7 +824,7 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 768px) {
   .functioning__container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 }
@@ -820,14 +860,31 @@ a:hover, a:focus {
 .restaurant__title {
   margin: 0 0 30px 0;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__title {
+    margin: 0 auto 40px auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__title {
+    margin: 0 0 30px 0;
+  }
+}
 .restaurant__container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .restaurant__container {
+    width: 100%;
     flex-flow: row wrap;
     justify-content: space-between;
   }

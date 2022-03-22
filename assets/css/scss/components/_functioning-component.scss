@@ -6,6 +6,14 @@
     align-items: center;
     @include mixins.fontSize(20px);
 
+    @include mixins.tablet-break {
+        @include mixins.fontSize(25px);
+    }
+
+    @include mixins.desktop-break {
+        @include mixins.fontSize(20px);
+    }
+
     &__order {
         position: relative;
         width: 35px;
