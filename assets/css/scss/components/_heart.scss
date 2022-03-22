@@ -4,7 +4,7 @@
 .heart {
     @include mixins.fontSize(40px);
 
-    @include mixins.desktop-break {
+    @include mixins.tablet-break {
         @include mixins.fontSize(50px);
     }
 }

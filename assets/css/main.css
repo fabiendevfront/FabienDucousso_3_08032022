@@ -380,6 +380,12 @@ a:hover, a:focus {
   font-size: 35px;
   font-size: 2.1875rem;
 }
+@media screen and (min-width: 768px) {
+  .title--big {
+    font-size: 45px;
+    font-size: 2.8125rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .title--big {
     font-size: 50px;
@@ -390,7 +396,7 @@ a:hover, a:focus {
   font-size: 30px;
   font-size: 1.875rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .title--medium {
     font-size: 38px;
     font-size: 2.375rem;
@@ -400,7 +406,7 @@ a:hover, a:focus {
   font-size: 25px;
   font-size: 1.5625rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .title--small {
     font-size: 32px;
     font-size: 2rem;
@@ -416,6 +422,12 @@ a:hover, a:focus {
   font-size: 1.5625rem;
   font-weight: 300;
   line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .subtitle {
@@ -547,7 +559,7 @@ a:hover, a:focus {
 }
 .func-comp__desc {
   width: 100%;
-  padding: 31px 20px 31px 25px;
+  padding: 31px 20px 31px 60px;
   background-color: #F6F6F6;
   display: flex;
   align-items: center;
@@ -622,16 +634,22 @@ a:hover, a:focus {
 }
 .rest-comp__localisation {
   margin: 0;
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .rest-comp__localisation {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
 }
 
 .heart {
   font-size: 40px;
   font-size: 2.5rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .heart {
     font-size: 50px;
     font-size: 3.125rem;
@@ -709,11 +727,17 @@ a:hover, a:focus {
 .explore__head {
   padding: 15px 3%;
 }
+@media screen and (min-width: 768px) {
+  .explore__head {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .explore__head {
     width: 56%;
     max-width: 800px;
-    margin-right: 3%;
+    margin: 0 3% 0 0;
   }
 }
 .explore__title {
@@ -740,6 +764,16 @@ a:hover, a:focus {
 .functioning__title {
   margin: 0 0 30px 0;
 }
+@media screen and (min-width: 768px) {
+  .functioning__title {
+    margin: 0 auto 40px auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .functioning__title {
+    margin: 0 0 30px 0;
+  }
+}
 .functioning__container {
   width: 100%;
   display: flex;
@@ -748,8 +782,15 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .functioning__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .functioning__container {
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -799,10 +840,14 @@ a:hover, a:focus {
 .restaurant__card:last-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__card {
+    height: 450px;
+  }
+}
 @media screen and (min-width: 992px) {
   .restaurant__card {
     width: 48%;
-    height: 450px;
   }
   .restaurant__card:nth-child(n+3) {
     margin-bottom: 0;

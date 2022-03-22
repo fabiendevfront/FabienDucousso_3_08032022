@@ -54,7 +54,11 @@
 
     &__localisation {
         margin: 0;
-        @include mixins.fontSize(28px);
+        @include mixins.fontSize(23px);
         font-weight: 400;
+
+        @include mixins.tablet-break {
+            @include mixins.fontSize(28px);
+        }
     }
 }
