@@ -1,5 +1,6 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
+@use '../base/animations';
 
 .func-comp {
     display: flex;
@@ -14,6 +15,18 @@
         @include mixins.fontSize(20px);
     }
 
+    &:hover {
+        .func-comp__desc {
+            transition: map-get(animations.$transition, medium);
+            background-color: map-get(variables.$bg-color, light-purple);
+            @include mixins.box-shadow(dark);
+        }
+
+        .func-comp__icon {
+            color: variables.$primary-color;
+        }
+    }
+
     &__order {
         position: relative;
         width: 35px;
@@ -22,18 +35,18 @@
         border-radius: 50%;
         margin-right: -17px;
         background-color: variables.$primary-color;
-        color: #FFFFFF;
+        color: variables.$light;
         text-align: center;
     }
 
     &__desc {
         width: 100%;
         padding: 31px 20px 31px 60px;
-        background-color: #F6F6F6;
+        background-color: map-get(variables.$bg-color, light-grey);
         display: flex;
         align-items: center;
         border-radius: 30px;
-        box-shadow: 3px 3px 12px #adadad;
+        @include mixins.box-shadow(light);
 
         @include mixins.desktop-break {
             padding: 31px 5% 31px 10%;
@@ -42,21 +55,11 @@
 
     &__icon {
         @include mixins.fontSize(28px);
-        color: #7E7E7E;
+        color: lighten(variables.$dark, 49.5%);
         margin-right: 6%;
     }
 
     &__txt {
         margin: 0;
-    }
-
-    &--purple {
-        .func-comp__desc {
-            background-color: #F5EDFF;
-        }
-
-        .func-comp__icon {
-            color: variables.$primary-color;
-        }
     }
 }

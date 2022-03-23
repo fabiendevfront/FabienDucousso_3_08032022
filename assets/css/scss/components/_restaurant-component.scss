@@ -1,19 +1,20 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
+@use '../base/animations';
 
 .rest-comp {
     position: relative;
     border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 12px #adadad;
+    background-color: variables.$light;
+    @include mixins.box-shadow(light);
 
     &:hover {
-        transition: all 0.5s ease-out;
-        box-shadow: 1px 1px 20px #3d3b3b;
+        transition: map-get(animations.$transition, medium);
+        @include mixins.box-shadow(dark);
 
         img {
+            transition: map-get(animations.$transition, fast);
             opacity: 0.7;
-            transition: all 0.3s ease-out;
         }
     }
 
@@ -33,8 +34,8 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        background-color: #99E2D0;
-        color: #008766;
+        background-color: map-get(variables.$bg-color, light-green);
+        color: variables.$green;
         @include mixins.fontSize(19px);
         padding: 10px 20px;
         border-radius: 4px;

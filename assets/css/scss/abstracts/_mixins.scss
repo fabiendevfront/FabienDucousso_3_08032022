@@ -1,17 +1,30 @@
 @use '../abstracts/variables';
 
-// TYPOGRAPHY
-@function calculateRem($size) {
+/* COLORS */
+@function shadow($color){
+	@if ($color == light) {
+		@return 3px 3px 12px darken(variables.$light, 30%);
+	} @else {
+		@return 3px 3px 18px lighten(variables.$dark, 30%);
+	}
+}
+
+@mixin box-shadow($color) {
+	box-shadow: shadow($color);
+}
+
+/* FONTS */
+@function calculate-rem($size) {
 	$remSize: calc($size / 16px);
 	@return #{$remSize}rem;
 }
 
 @mixin fontSize($size) {
 	font-size: $size;
-	font-size: calculateRem($size);
+	font-size: calculate-rem($size);
 }
 
-// RESPONSIVE
+/* RESPONSIVE */
 @mixin tablet-break {
 	@media screen and (min-width: map-get(variables.$breakpoints, tablet)) {
 		@content;

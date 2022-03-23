@@ -1,15 +1,27 @@
-// COLORS
+/* COLORS */
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$light: #FFFFFF;
 $dark: #000000;
+$green: #008766;
 
-// TEXT
+// Background color map
+$bg-color: (
+    light-grey: darken($light, 3.5%),
+    medium-grey: darken($light, 8.2%),
+    dark-grey: lighten($dark, 20.8%),
+    light-green: $tertiary-color,
+    light-purple: lighten($primary-color, 36.2%),
+    linear-gradient: linear-gradient(175deg, $secondary-color 10%, $primary-color 90%)
+);
+
+/* FONTS */
 $font-title: 'Shrikhand', cursive;
 $font-text : 'Roboto', sans-serif;
 
-// RESPONSIVE
+/* RESPONSIVE */
 $breakpoints: (
     tablet: 768px,
     desktop: 992px
-)
+);

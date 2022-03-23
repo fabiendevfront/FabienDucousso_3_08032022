@@ -2,7 +2,8 @@
 @use '../abstracts/variables';
 
 .footer {
-    background-color: #353535;
+    background-color: map-get(variables.$bg-color, dark-grey);
+    color: variables.$light;
     @include mixins.fontSize(19px);
     padding: 20px 5%;
 
@@ -16,7 +17,6 @@
     }
 
     &__title {
-        color: #ffffff;
         margin: 20px 0 30px 0;
 
         @include mixins.tablet-break {
@@ -51,10 +51,10 @@
     }
 
     &__link {
+        color: variables.$light;
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #ffffff;
 
         &:hover {
             color: variables.$primary-color;

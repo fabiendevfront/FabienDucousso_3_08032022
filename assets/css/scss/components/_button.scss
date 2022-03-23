@@ -1,25 +1,24 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
+@use '../base/animations';
 
 .btn {
-    max-width: 270px;
-    background: linear-gradient(175deg, variables.$secondary-color 10%, variables.$primary-color 90%);
+    background: map-get(variables.$bg-color, linear-gradient);
     padding: 22px 30px;
     border: none;
     border-radius: 35px;
-    box-shadow: 3px 3px 12px #adadad;
+    @include mixins.box-shadow(light);
     @include mixins.fontSize(18px);
-    color: #FFFFFF;
+    color: variables.$light;
 
     &:hover {
         opacity: 0.85;
-        transition: all 0.5s ease-out;
-        box-shadow: 3px 3px 18px #3d3b3b;
+        transition: map-get(animations.$transition, medium);
+        @include mixins.box-shadow(dark);
         cursor: pointer;
     }
 
     @include mixins.tablet-break {
-        max-width: none;
         @include mixins.fontSize(22px);
     }
 
