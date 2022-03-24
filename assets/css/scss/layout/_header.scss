@@ -2,6 +2,7 @@
 @use '../abstracts/variables';
 
 .header {
+    position: relative;
     width: 100%;
     padding: 40px 3% 20px 3%;
     box-shadow: 0 3px 6px darken(variables.$light, 40%);
@@ -18,6 +19,21 @@
 
         @include mixins.desktop-break {
             height: 55px;
+        }
+    }
+
+    &--restaurant {
+        box-shadow: none;
+
+        .header__arrow {
+            position: absolute;
+            top: 45px;
+            left: 22px;
+            @include mixins.fontSize(25px);
+
+            &:hover {
+                color: variables.$primary-color;
+            }
         }
     }
 }

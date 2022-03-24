@@ -444,6 +444,7 @@ a:hover, a:focus {
 
 /* TRANSITIONS */
 .header {
+  position: relative;
   width: 100%;
   padding: 40px 3% 20px 3%;
   box-shadow: 0 3px 6px #999999;
@@ -463,6 +464,19 @@ a:hover, a:focus {
   .header__logo {
     height: 55px;
   }
+}
+.header--restaurant {
+  box-shadow: none;
+}
+.header--restaurant .header__arrow {
+  position: absolute;
+  top: 45px;
+  left: 22px;
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+.header--restaurant .header__arrow:hover {
+  color: #9356DC;
 }
 
 .footer {
