@@ -58,6 +58,29 @@ a {
     }
 }
 
+.title-menu {
+    line-height: 1;
+
+    &--big {
+        @include mixins.fontSize(28px);
+    }
+
+    &--medium {
+        @include mixins.fontSize(20px);
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &--small {
+        @include mixins.fontSize(20px);
+    }
+
+    &--shrik {
+        font-family: variables.$font-title;
+        font-weight: 300;
+    }
+}
+
 .subtitle {
     @include mixins.fontSize(25px);
     font-weight: 300;
@@ -70,4 +93,9 @@ a {
     @include mixins.desktop-break {
         @include mixins.fontSize(32px);
     }
+}
+
+.subtitle-menu {
+    @include mixins.fontSize(17px);
+    font-weight: 300;
 }

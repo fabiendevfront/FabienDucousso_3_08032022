@@ -7,4 +7,8 @@
     @include mixins.tablet-break {
         @include mixins.fontSize(50px);
     }
+
+    &--menu {
+        @include mixins.fontSize(25px);
+    }
 }

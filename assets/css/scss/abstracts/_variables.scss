@@ -12,6 +12,7 @@ $bg-color: (
     medium-grey: darken($light, 8.2%),
     dark-grey: lighten($dark, 20.8%),
     light-green: $tertiary-color,
+    light: $light,
     light-purple: lighten($primary-color, 36.2%),
     linear-gradient: linear-gradient(175deg, $secondary-color 10%, $primary-color 90%)
 );

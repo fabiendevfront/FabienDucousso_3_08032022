@@ -25,4 +25,8 @@
     @include mixins.desktop-break {
         @include mixins.fontSize(25px);
     }
+
+    &--menu {
+        padding: 18px 40px;
+    }
 }

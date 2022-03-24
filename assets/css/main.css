@@ -348,6 +348,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: #FFFFFF;
 }
@@ -423,6 +427,28 @@ a:hover, a:focus {
   font-weight: 300;
 }
 
+.title-menu {
+  line-height: 1;
+}
+.title-menu--big {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+.title-menu--medium {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.title-menu--small {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.title-menu--shrik {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+}
+
 .subtitle {
   font-size: 25px;
   font-size: 1.5625rem;
@@ -440,6 +466,12 @@ a:hover, a:focus {
     font-size: 32px;
     font-size: 2rem;
   }
+}
+
+.subtitle-menu {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-weight: 300;
 }
 
 /* TRANSITIONS */
@@ -477,6 +509,9 @@ a:hover, a:focus {
 }
 .header--restaurant .header__arrow:hover {
   color: #9356DC;
+}
+.header--restaurant .header__logo {
+  height: 35px;
 }
 
 .footer {
@@ -585,6 +620,9 @@ a:hover, a:focus {
     font-size: 25px;
     font-size: 1.5625rem;
   }
+}
+.btn--menu {
+  padding: 18px 40px;
 }
 
 .func-comp {
@@ -706,6 +744,36 @@ a:hover, a:focus {
   }
 }
 
+.menu-comp {
+  background-color: #FFFFFF;
+  padding: 18px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 20px;
+  box-shadow: 3px 3px 12px #b3b3b3;
+}
+.menu-comp__desc {
+  margin-right: 2%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-comp__title {
+  margin: 0 0 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-comp__subtitle {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-comp__price {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 .heart {
   font-size: 40px;
   font-size: 2.5rem;
@@ -715,6 +783,10 @@ a:hover, a:focus {
     font-size: 50px;
     font-size: 3.125rem;
   }
+}
+.heart--menu {
+  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .localisation {
@@ -930,6 +1002,67 @@ a:hover, a:focus {
   .restaurant__card:nth-child(n+3) {
     margin-bottom: 0;
   }
+}
+
+.cover {
+  width: 100%;
+  height: 300px;
+}
+.cover__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  margin-top: -50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 50px 5% 80px 5%;
+}
+.menu__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.menu__restaurant {
+  margin: 0 3% 0 0;
+}
+.menu__section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.menu__title {
+  position: relative;
+  margin: 0 0 30px 0;
+}
+.menu__title::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #99E2D0;
+}
+.menu__container {
+  display: flex;
+  flex-direction: column;
+}
+.menu__item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.menu__btn {
+  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 /*# sourceMappingURL=main.css.map */
