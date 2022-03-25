@@ -5,7 +5,7 @@
 .func-comp {
     display: flex;
     align-items: center;
-    @include mixins.fontSize(20px);
+    @include mixins.fontSize(18px);
 
     @include mixins.tablet-break {
         @include mixins.fontSize(25px);
@@ -41,12 +41,16 @@
 
     &__desc {
         width: 100%;
-        padding: 31px 20px 31px 60px;
+        padding: 31px 20px 31px 50px;
         background-color: map-get(variables.$bg-color, light-grey);
         display: flex;
         align-items: center;
         border-radius: 30px;
         @include mixins.box-shadow(light);
+
+        @include mixins.tablet-break {
+            padding-left: 60px;
+        }
 
         @include mixins.desktop-break {
             padding: 31px 5% 31px 10%;

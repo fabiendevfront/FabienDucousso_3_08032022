@@ -46,16 +46,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 35px;
+        padding: 20px 20px;
     }
 
     &__title {
-        margin: 0 0 12px 0;
+        margin: 0 0 8px 0;
     }
 
     &__localisation {
         margin: 0;
-        @include mixins.fontSize(23px);
+        @include mixins.fontSize(20px);
         font-weight: 400;
 
         @include mixins.tablet-break {

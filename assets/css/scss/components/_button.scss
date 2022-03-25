@@ -8,7 +8,7 @@
     border: none;
     border-radius: 35px;
     @include mixins.box-shadow(light);
-    @include mixins.fontSize(18px);
+    @include mixins.fontSize(17px);
     color: variables.$light;
 
     &:hover {

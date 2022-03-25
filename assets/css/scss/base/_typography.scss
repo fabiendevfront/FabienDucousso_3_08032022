@@ -22,10 +22,10 @@ a {
 
 .title {
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.2;
 
     &--big {
-        @include mixins.fontSize(35px);
+        @include mixins.fontSize(30px);
 
         @include mixins.tablet-break {
             @include mixins.fontSize(45px);
@@ -37,7 +37,7 @@ a {
     }
 
     &--medium {
-        @include mixins.fontSize(30px);
+        @include mixins.fontSize(26px);
 
         @include mixins.tablet-break {
             @include mixins.fontSize(38px);
@@ -45,7 +45,7 @@ a {
     }
 
     &--small {
-        @include mixins.fontSize(25px);
+        @include mixins.fontSize(22px);
 
         @include mixins.tablet-break {
             @include mixins.fontSize(32px);
@@ -82,9 +82,9 @@ a {
 }
 
 .subtitle {
-    @include mixins.fontSize(25px);
+    @include mixins.fontSize(21px);
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.2;
 
     @include mixins.tablet-break {
         @include mixins.fontSize(28px);

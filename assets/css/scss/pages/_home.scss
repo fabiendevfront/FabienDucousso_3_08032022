@@ -4,7 +4,6 @@
 .localisation {
     width: 100%;
     background-color: map-get(variables.$bg-color, medium-grey);
-    margin-top: 5px;
     padding: 15px 5%;
     display: flex;
     flex-direction: column;
@@ -56,7 +55,7 @@
 .explore {
     width: 100%;
     background-color: map-get(variables.$bg-color, light-grey);
-    padding: 50px 5%;
+    padding: 30px 5% 50px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
