@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background-color: variables.$light;
+	background-color: map-get(variables.$bg-color, light);
 }
 
 img {

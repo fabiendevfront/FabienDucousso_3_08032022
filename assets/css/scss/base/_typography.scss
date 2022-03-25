@@ -24,7 +24,7 @@ a {
     font-weight: 900;
 
     &--big {
-        @include mixins.fontSize(30px);
+        @include mixins.fontSize(32px);
 
         @include mixins.tablet-break {
             @include mixins.fontSize(45px);
@@ -62,7 +62,7 @@ a {
     font-weight: 300;
 
     @include mixins.tablet-break {
-        @include mixins.fontSize(22px);
+        @include mixins.fontSize(24px);
     }
 
     @include mixins.desktop-break {

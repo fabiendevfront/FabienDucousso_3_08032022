@@ -13,7 +13,6 @@
 
     @include mixins.desktop-break {
         padding-bottom: 40px;
-        @include mixins.fontSize(23px);
     }
 
     &__title {

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
 /* COLORS */
 /* FONTS */
+/* SIZES */
 /* RESPONSIVE */
 /* COLORS */
 /* FONTS */
@@ -386,8 +387,8 @@ a:hover, a:focus {
   font-weight: 900;
 }
 .title--big {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 32px;
+  font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .title--big {
@@ -433,8 +434,8 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 768px) {
   .subtitle {
-    font-size: 22px;
-    font-size: 1.375rem;
+    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -552,8 +553,6 @@ a:hover, a:focus {
 @media screen and (min-width: 992px) {
   .footer {
     padding-bottom: 40px;
-    font-size: 23px;
-    font-size: 1.4375rem;
   }
 }
 .footer__title {
@@ -931,7 +930,6 @@ a:hover, a:focus {
 @media screen and (min-width: 992px) {
   .explore__subtitle {
     width: 80%;
-    line-height: 1.2;
     margin: 0;
   }
 }
@@ -1062,11 +1060,6 @@ a:hover, a:focus {
 @media screen and (min-width: 768px) {
   .cover {
     height: 400px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .cover {
-    justify-content: center;
   }
 }
 .cover__picture {
