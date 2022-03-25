@@ -31,5 +31,9 @@
     &__price {
         @include mixins.fontSize(18px);
         font-weight: 700;
+
+        @include mixins.tablet-break {
+            @include mixins.fontSize(21px);
+        }
     }
 }

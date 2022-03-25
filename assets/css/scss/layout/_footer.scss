@@ -38,17 +38,29 @@
         padding: 0;
 
         @include mixins.tablet-break {
-            align-items: center;
+            flex-flow: row wrap;
         }
 
         @include mixins.desktop-break {
-            flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: space-around;
         }
     }
 
     &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         margin-bottom: 15px;
+
+        @include mixins.tablet-break {
+            width: 50%;
+            justify-content: center;
+        }
+
+        @include mixins.desktop-break {
+            width: auto;
+        }
     }
 
     &__link {
@@ -57,7 +69,8 @@
         flex-direction: row;
         align-items: center;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: variables.$primary-color;
         }
     }

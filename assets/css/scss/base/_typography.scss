@@ -7,7 +7,7 @@ body {
     @include mixins.fontSize(15px);
     font-weight: 500;
     color: variables.$dark;
-    line-height: 20px;
+    line-height: 1.2;
 }
 
 a {
@@ -22,7 +22,6 @@ a {
 
 .title {
     font-weight: 900;
-    line-height: 1.2;
 
     &--big {
         @include mixins.fontSize(30px);
@@ -48,31 +47,8 @@ a {
         @include mixins.fontSize(22px);
 
         @include mixins.tablet-break {
-            @include mixins.fontSize(32px);
+            @include mixins.fontSize(28px);
         }
-    }
-
-    &--shrik {
-        font-family: variables.$font-title;
-        font-weight: 300;
-    }
-}
-
-.title-menu {
-    line-height: 1;
-
-    &--big {
-        @include mixins.fontSize(28px);
-    }
-
-    &--medium {
-        @include mixins.fontSize(20px);
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-
-    &--small {
-        @include mixins.fontSize(20px);
     }
 
     &--shrik {
@@ -84,10 +60,9 @@ a {
 .subtitle {
     @include mixins.fontSize(21px);
     font-weight: 300;
-    line-height: 1.2;
 
     @include mixins.tablet-break {
-        @include mixins.fontSize(28px);
+        @include mixins.fontSize(22px);
     }
 
     @include mixins.desktop-break {
@@ -95,7 +70,46 @@ a {
     }
 }
 
+.title-menu {
+    font-weight: 900;
+
+    &--big {
+        @include mixins.fontSize(28px);
+
+        @include mixins.tablet-break {
+            @include mixins.fontSize(38px);
+        }
+    }
+
+    &--medium {
+        @include mixins.fontSize(20px);
+        font-weight: 300;
+        text-transform: uppercase;
+
+        @include mixins.tablet-break {
+            @include mixins.fontSize(25px);
+        }
+    }
+
+    &--small {
+        @include mixins.fontSize(20px);
+
+        @include mixins.tablet-break {
+            @include mixins.fontSize(25px);
+        }
+    }
+
+    &--shrik {
+        font-family: variables.$font-title;
+        font-weight: 300;
+    }
+}
+
 .subtitle-menu {
     @include mixins.fontSize(17px);
     font-weight: 300;
+
+    @include mixins.tablet-break {
+        @include mixins.fontSize(21px);
+    }
 }

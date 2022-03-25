@@ -5,6 +5,14 @@
     width: 100%;
     height: 300px;
 
+    @include mixins.tablet-break {
+        height: 400px;
+    }
+
+    @include mixins.tablet-break {
+        justify-content: center;
+    }
+
     &__picture {
         width: 100%;
         height: 100%;
@@ -29,15 +37,39 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 50px;
+
+        @include mixins.tablet-break {
+            justify-content: center;
+        }
     }
 
     &__restaurant {
         margin: 0 3% 0 0;
     }
 
+    &__section-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @include mixins.tablet-break {
+            width: 80%;
+        }
+
+        @include mixins.desktop-break {
+            width: 100%;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    }
+
     &__section {
         width: 100%;
         margin-bottom: 30px;
+
+        @include mixins.desktop-break {
+            width: 48%;
+        }
     }
 
     &__title {

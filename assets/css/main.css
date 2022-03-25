@@ -371,7 +371,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 500;
   color: #000000;
-  line-height: 20px;
+  line-height: 1.2;
 }
 
 a {
@@ -384,7 +384,6 @@ a:hover, a:focus {
 
 .title {
   font-weight: 900;
-  line-height: 1.2;
 }
 .title--big {
   font-size: 30px;
@@ -418,33 +417,11 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 768px) {
   .title--small {
-    font-size: 32px;
-    font-size: 2rem;
+    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 .title--shrik {
-  font-family: "Shrikhand", cursive;
-  font-weight: 300;
-}
-
-.title-menu {
-  line-height: 1;
-}
-.title-menu--big {
-  font-size: 28px;
-  font-size: 1.75rem;
-}
-.title-menu--medium {
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.title-menu--small {
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-.title-menu--shrik {
   font-family: "Shrikhand", cursive;
   font-weight: 300;
 }
@@ -453,12 +430,11 @@ a:hover, a:focus {
   font-size: 21px;
   font-size: 1.3125rem;
   font-weight: 300;
-  line-height: 1.2;
 }
 @media screen and (min-width: 768px) {
   .subtitle {
-    font-size: 28px;
-    font-size: 1.75rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -468,10 +444,56 @@ a:hover, a:focus {
   }
 }
 
+.title-menu {
+  font-weight: 900;
+}
+.title-menu--big {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .title-menu--big {
+    font-size: 38px;
+    font-size: 2.375rem;
+  }
+}
+.title-menu--medium {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .title-menu--medium {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+.title-menu--small {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .title-menu--small {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+.title-menu--shrik {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+}
+
 .subtitle-menu {
   font-size: 17px;
   font-size: 1.0625rem;
   font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  .subtitle-menu {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
 }
 
 /* TRANSITIONS */
@@ -502,7 +524,7 @@ a:hover, a:focus {
 }
 .header--restaurant .header__arrow {
   position: absolute;
-  top: 45px;
+  top: 30px;
   left: 22px;
   font-size: 25px;
   font-size: 1.5625rem;
@@ -561,17 +583,31 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    align-items: center;
+    flex-flow: row wrap;
   }
 }
 @media screen and (min-width: 992px) {
   .footer__container {
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
 }
 .footer__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer__item {
+    width: 50%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__item {
+    width: auto;
+  }
 }
 .footer__link {
   color: #FFFFFF;
@@ -579,7 +615,7 @@ a:hover, a:focus {
   flex-direction: row;
   align-items: center;
 }
-.footer__link:hover {
+.footer__link:hover, .footer__link:focus {
   color: #9356DC;
 }
 .footer__icon {
@@ -710,7 +746,7 @@ a:hover, a:focus {
 }
 .rest-comp__picture {
   width: 100%;
-  height: 70%;
+  height: 75%;
 }
 .rest-comp__picture img {
   width: 100%;
@@ -730,14 +766,14 @@ a:hover, a:focus {
   border-radius: 4px;
 }
 .rest-comp__desc {
-  height: 30%;
+  height: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
 }
 .rest-comp__title {
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
 }
 .rest-comp__localisation {
   margin: 0;
@@ -747,8 +783,8 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 768px) {
   .rest-comp__localisation {
-    font-size: 28px;
-    font-size: 1.75rem;
+    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
@@ -780,6 +816,12 @@ a:hover, a:focus {
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .menu-comp__price {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
 }
 
 .heart {
@@ -925,11 +967,13 @@ a:hover, a:focus {
 @media screen and (min-width: 768px) {
   .functioning__container {
     width: 70%;
+    max-width: 500px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 992px) {
   .functioning__container {
+    max-width: none;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -1015,6 +1059,16 @@ a:hover, a:focus {
   width: 100%;
   height: 300px;
 }
+@media screen and (min-width: 768px) {
+  .cover {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cover {
+    justify-content: center;
+  }
+}
 .cover__picture {
   width: 100%;
   height: 100%;
@@ -1039,12 +1093,39 @@ a:hover, a:focus {
   align-items: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .menu__head {
+    justify-content: center;
+  }
+}
 .menu__restaurant {
   margin: 0 3% 0 0;
+}
+.menu__section-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .menu__section-container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__section-container {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }
 .menu__section {
   width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 992px) {
+  .menu__section {
+    width: 48%;
+  }
 }
 .menu__title {
   position: relative;
