@@ -77,7 +77,7 @@ a {
         @include mixins.fontSize(28px);
 
         @include mixins.tablet-break {
-            @include mixins.fontSize(38px);
+            @include mixins.fontSize(40px);
         }
     }
 
