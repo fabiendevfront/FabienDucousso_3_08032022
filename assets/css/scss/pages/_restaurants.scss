@@ -1,5 +1,6 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
+@use '../base/animations';
 
 .cover {
     width: 100%;
@@ -91,10 +92,25 @@
     &__item {
         width: 100%;
         margin-bottom: 20px;
+
+        &--first {
+            animation: map-get(animations.$slide-length, first);
+        }
+
+        &--second {
+            animation: map-get(animations.$slide-length, second);
+        }
+
+        &--third {
+            animation: map-get(animations.$slide-length, third);
+        }
+
+        &--fourth {
+            animation: map-get(animations.$slide-length, fourth);
+        }
     }
 
     &__btn {
         @include mixins.fontSize(22px);
     }
-
 }

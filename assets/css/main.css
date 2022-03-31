@@ -499,7 +499,19 @@ a:hover, a:focus {
 
 /* TRANSITIONS */
 /* KEYFRAMES */
-@keyframes load-spin {}
+@keyframes menu-slide {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .header {
   position: relative;
   width: 100%;
@@ -1173,6 +1185,18 @@ a:hover, a:focus {
 .menu__item {
   width: 100%;
   margin-bottom: 20px;
+}
+.menu__item--first {
+  animation: menu-slide 1.3s linear 0.3s both;
+}
+.menu__item--second {
+  animation: menu-slide 1.3s linear 0.6s both;
+}
+.menu__item--third {
+  animation: menu-slide 1.3s linear 0.9s both;
+}
+.menu__item--fourth {
+  animation: menu-slide 1.3s linear 1.2s both;
 }
 .menu__btn {
   font-size: 22px;
