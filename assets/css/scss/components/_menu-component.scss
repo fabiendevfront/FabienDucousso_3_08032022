@@ -18,14 +18,20 @@
         transition: map-get(animations.$transition, medium);
 
         .menu-comp__select {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             animation: select-slide 0.5s linear both;
         }
 
         .menu-comp__check {
             animation: icon-rotate 0.3s linear 0.2s both;
+        }
+    }
+
+    &:not(:hover) {
+        padding-right: 15px;
+        transition: map-get(animations.$transition, medium);
+
+        .menu-comp__select {
+            animation: close-slide 0.5s linear both;
         }
     }
 
@@ -65,9 +71,12 @@
         right: 0;
         width: 90px;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: map-get(variables.$bg-color, light-green);
         border-radius: 0 20px 20px 0;
-        display: none;
+        cursor: pointer;
     }
 
     &__check {

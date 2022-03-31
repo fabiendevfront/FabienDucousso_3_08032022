@@ -520,6 +520,14 @@ a:hover, a:focus {
     transform: translateX(0);
   }
 }
+@keyframes close-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 @keyframes icon-rotate {
   0% {
     transform: rotate(0);
@@ -833,13 +841,17 @@ a:hover, a:focus {
   transition: all 0.5s ease-out;
 }
 .menu-comp:hover .menu-comp__select {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: select-slide 0.5s linear both;
 }
 .menu-comp:hover .menu-comp__check {
   animation: icon-rotate 0.3s linear 0.2s both;
+}
+.menu-comp:not(:hover) {
+  padding-right: 15px;
+  transition: all 0.5s ease-out;
+}
+.menu-comp:not(:hover) .menu-comp__select {
+  animation: close-slide 0.5s linear both;
 }
 .menu-comp__desc {
   width: 80%;
@@ -876,9 +888,12 @@ a:hover, a:focus {
   right: 0;
   width: 90px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
-  display: none;
+  cursor: pointer;
 }
 .menu-comp__check {
   color: #FFFFFF;

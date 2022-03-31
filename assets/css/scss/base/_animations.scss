@@ -41,6 +41,16 @@ $slide-length: (
     }
 }
 
+@keyframes close-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 @keyframes icon-rotate {
     0% {
         transform: rotate(0);
