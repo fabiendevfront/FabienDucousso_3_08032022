@@ -1,5 +1,6 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
+@use '../base/animations';
 
 .menu-comp {
     background-color: map-get(variables.$bg-color, light);
@@ -9,8 +10,27 @@
     align-items: flex-end;
     border-radius: 20px;
     @include mixins.box-shadow(light);
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        padding-right: 90px;
+        transition: map-get(animations.$transition, medium);
+
+        .menu-comp__select {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: select-slide 0.5s linear both;
+        }
+
+        .menu-comp__check {
+            animation: icon-rotate 0.3s linear 0.2s both;
+        }
+    }
 
     &__desc {
+        width: 80%;
         margin-right: 2%;
         overflow: hidden;
         white-space: nowrap;
@@ -29,11 +49,29 @@
     }
 
     &__price {
+        margin-right: 15px;
         @include mixins.fontSize(18px);
         font-weight: 700;
 
         @include mixins.tablet-break {
             @include mixins.fontSize(21px);
         }
+    }
+
+    &__select {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 90px;
+        height: 100%;
+        background-color: map-get(variables.$bg-color, light-green);
+        border-radius: 0 20px 20px 0;
+        display: none;
+    }
+
+    &__check {
+        color: variables.$light;
+        @include mixins.fontSize(35px);
     }
 }

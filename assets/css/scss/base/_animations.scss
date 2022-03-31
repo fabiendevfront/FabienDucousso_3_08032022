@@ -30,3 +30,23 @@ $slide-length: (
     third: menu-slide 1.3s linear 0.9s both,
     fourth: menu-slide 1.3s linear 1.2s both
 );
+
+@keyframes select-slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes icon-rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
