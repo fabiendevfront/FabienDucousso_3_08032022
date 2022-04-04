@@ -1076,7 +1076,7 @@ a:hover, a:focus {
   height: 100vh;
   opacity: 0.9;
   z-index: 2;
-  animation: loader-bg 4s linear 0.5s forwards;
+  animation: loader-bg 3s linear 0.5s forwards;
 }
 .loader__item {
   width: 100%;
