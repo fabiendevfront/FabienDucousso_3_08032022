@@ -2,6 +2,9 @@
 @use '../abstracts/variables';
 @use '../base/animations';
 
+/*******************/
+/* MENU COMPONENT */
+/******************/
 .menu-comp {
     background-color: map-get(variables.$bg-color, light);
     padding: 18px 15px;

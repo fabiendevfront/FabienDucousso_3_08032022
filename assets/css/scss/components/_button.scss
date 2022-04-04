@@ -2,6 +2,9 @@
 @use '../abstracts/variables';
 @use '../base/animations';
 
+/********************/
+/* BUTTON COMPONENT */
+/********************/
 .btn {
     background: map-get(variables.$bg-color, linear-gradient);
     padding: 22px 30px;

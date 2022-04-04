@@ -27,6 +27,14 @@ $bg-color: (
     linear-gradient: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%)
 );
 
+// 2.Loader container border colors map
+
+$loader-border-color: (
+    b-purple: $primary-color $primary-color $primary-color map-get($bg-color, light-purple),
+    b-pink: $secondary-color $secondary-color $secondary-color map-get($bg-color, light-purple),
+    b-green: $tertiary-color $tertiary-color $tertiary-color map-get($bg-color, light-purple)
+);
+
 /**********/
 /* SIZES */
 /*********/

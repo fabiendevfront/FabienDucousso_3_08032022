@@ -11,9 +11,18 @@
 /***************/
 /* RESPONSIVE */
 /**************/
-/* COLORS */
+/**********/
 /* FONTS */
+/*********/
+/***********/
+/* COLORS */
+/**********/
+/***************/
 /* RESPONSIVE */
+/**************/
+/*****************/
+/* FILES EXPORT */
+/****************/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -353,6 +362,9 @@ template {
   display: none;
 }
 
+/************/
+/* GENERAL */
+/***********/
 * {
   box-sizing: border-box;
 }
@@ -374,6 +386,9 @@ li {
   list-style-type: none;
 }
 
+/***********/
+/* GENERAL */
+/***********/
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -391,6 +406,9 @@ a:hover, a:focus {
   color: #000000;
 }
 
+/************/
+/* HOMEPAGE */
+/************/
 .title {
   font-weight: 900;
 }
@@ -453,6 +471,9 @@ a:hover, a:focus {
   }
 }
 
+/************/
+/* HOMEPAGE */
+/************/
 .title-menu {
   font-weight: 900;
 }
@@ -511,43 +532,6 @@ a:hover, a:focus {
 /**************/
 /* KEYFRAMES */
 /*************/
-@keyframes menu-slide {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes select-slide {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes close-slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-@keyframes icon-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @keyframes loader-bg {
   0% {
     opacity: 0.9;
@@ -607,6 +591,49 @@ a:hover, a:focus {
     transform: scale(0);
   }
 }
+@keyframes menu-slide {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes select-slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes close-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*****************/
+/* FILES EXPORT */
+/****************/
+/*****************/
+/* HEADER LAYOUT */
+/*****************/
 .header {
   position: relative;
   width: 100%;
@@ -646,6 +673,9 @@ a:hover, a:focus {
   height: 35px;
 }
 
+/*****************/
+/* FOOTER LAYOUT */
+/*****************/
 .footer {
   background-color: #353535;
   color: #FFFFFF;
@@ -740,6 +770,12 @@ a:hover, a:focus {
   margin: 0;
 }
 
+/*****************/
+/* FILES EXPORT */
+/****************/
+/********************/
+/* BUTTON COMPONENT */
+/********************/
 .btn {
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   padding: 22px 30px;
@@ -772,6 +808,9 @@ a:hover, a:focus {
   padding: 18px 40px;
 }
 
+/**************************/
+/* FUNCTIONING COMPONENT */
+/************************/
 .func-comp {
   display: flex;
   align-items: center;
@@ -838,6 +877,9 @@ a:hover, a:focus {
   margin: 0;
 }
 
+/************************/
+/* RESTAURANT COMPONENT */
+/***********************/
 .rest-comp {
   position: relative;
   border-radius: 20px;
@@ -895,7 +937,20 @@ a:hover, a:focus {
     font-size: 1.625rem;
   }
 }
+.rest-comp__heart {
+  font-size: 35px;
+  font-size: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .rest-comp__heart {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
 
+/*******************/
+/* MENU COMPONENT */
+/******************/
 .menu-comp {
   background-color: #FFFFFF;
   padding: 18px 15px;
@@ -972,17 +1027,12 @@ a:hover, a:focus {
   font-size: 2.1875rem;
 }
 
+/********************/
+/* HEART COMPONENT */
+/*******************/
 .heart {
   position: relative;
   color: #FFFFFF;
-  font-size: 35px;
-  font-size: 2.1875rem;
-}
-@media screen and (min-width: 768px) {
-  .heart {
-    font-size: 40px;
-    font-size: 2.5rem;
-  }
 }
 .heart:hover::before {
   opacity: 0;
@@ -1013,11 +1063,12 @@ a:hover, a:focus {
   z-index: 1;
 }
 .heart--menu {
-  font-size: 35px;
-  font-size: 2.1875rem;
   color: #f6f6f6;
 }
 
+/*****************************/
+/* LOADING SPINNER COMPONENT */
+/*****************************/
 .loader {
   position: fixed;
   background: #FFFFFF;
@@ -1097,6 +1148,12 @@ a:hover, a:focus {
   animation: border-rotate 5s linear both;
 }
 
+/*****************/
+/* FILES EXPORT */
+/****************/
+/*******************/
+/* HOMEPAGE STYLE */
+/******************/
 .localisation {
   width: 100%;
   background-color: #eaeaea;
@@ -1312,6 +1369,9 @@ a:hover, a:focus {
   }
 }
 
+/*************************/
+/* RESTAURANT PAGE STYLE */
+/*************************/
 .cover {
   width: 100%;
   height: 300px;
@@ -1352,6 +1412,10 @@ a:hover, a:focus {
 }
 .menu__restaurant {
   margin: 0 3% 0 0;
+}
+.menu__heart {
+  font-size: 35px;
+  font-size: 2.1875rem;
 }
 .menu__section-container {
   width: 100%;
@@ -1422,5 +1486,12 @@ a:hover, a:focus {
   font-size: 22px;
   font-size: 1.375rem;
 }
+
+/*****************/
+/* FILES EXPORT */
+/****************/
+/*******************/
+/* FOLDERS IMPORT */
+/******************/
 
 /*# sourceMappingURL=main.css.map */

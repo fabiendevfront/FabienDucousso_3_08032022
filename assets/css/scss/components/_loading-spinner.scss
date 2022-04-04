@@ -2,6 +2,9 @@
 @use '../abstracts/variables';
 @use '../base/animations';
 
+/*****************************/
+/* LOADING SPINNER COMPONENT */
+/*****************************/
 .loader {
     position: fixed;
     background: map-get(variables.$bg-color, light);

@@ -1,6 +1,26 @@
 @use '../abstracts/variables';
 
+/**********/
+/* FONTS */
+/*********/
+
+// 1.Transform function for font size in pixels into rem
+@function calculate-rem($size) {
+	$remSize: calc($size / 16px);
+	@return #{$remSize}rem;
+}
+
+// 2.Contain font size in pixel and rem
+@mixin fontSize($size) {
+	font-size: $size;
+	font-size: calculate-rem($size);
+}
+
+/***********/
 /* COLORS */
+/**********/
+
+// 1.Function with condition to determine box shadow
 @function shadow($color){
 	@if ($color == light) {
 		@return 3px 3px 12px darken(variables.$light, 30%);
@@ -9,28 +29,23 @@
 	}
 }
 
+// 2.Contain box shadow
 @mixin box-shadow($color) {
 	box-shadow: shadow($color);
 }
 
-/* FONTS */
-@function calculate-rem($size) {
-	$remSize: calc($size / 16px);
-	@return #{$remSize}rem;
-}
-
-@mixin fontSize($size) {
-	font-size: $size;
-	font-size: calculate-rem($size);
-}
-
+/***************/
 /* RESPONSIVE */
+/**************/
+
+// 1. Contain responsive breakpoint for tablet
 @mixin tablet-break {
 	@media screen and (min-width: map-get(variables.$breakpoints, tablet)) {
 		@content;
 	}
 }
 
+// 2. Contain responsive breakpoint for desktop
 @mixin desktop-break {
 	@media screen and (min-width: map-get(variables.$breakpoints, desktop)) {
 		@content;

@@ -2,6 +2,9 @@
 @use '../abstracts/variables';
 @use '../base/animations';
 
+/************************/
+/* RESTAURANT COMPONENT */
+/***********************/
 .rest-comp {
     position: relative;
     border-radius: 20px;
@@ -60,6 +63,14 @@
 
         @include mixins.tablet-break {
             @include mixins.fontSize(26px);
+        }
+    }
+
+    &__heart {
+        @include mixins.fontSize(35px);
+
+        @include mixins.tablet-break {
+            @include mixins.fontSize(40px);
         }
     }
 }

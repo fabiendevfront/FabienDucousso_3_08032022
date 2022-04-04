@@ -2,14 +2,12 @@
 @use '../abstracts/variables';
 @use '../base/animations';
 
+/********************/
+/* HEART COMPONENT */
+/*******************/
 .heart {
     position: relative;
     color: map-get(variables.$bg-color, light);
-    @include mixins.fontSize(35px);
-
-    @include mixins.tablet-break {
-        @include mixins.fontSize(40px);
-    }
 
     &:hover {
 
@@ -48,8 +46,9 @@
         z-index: 1;
     }
 
+    // 2.Heart for restaurant page
     &--menu {
-        @include mixins.fontSize(35px);
+        // @include mixins.fontSize(35px);
         color: map-get(variables.$bg-color, light-grey);
     }
 }

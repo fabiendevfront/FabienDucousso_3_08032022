@@ -1,6 +1,9 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
 
+/*****************/
+/* FOOTER LAYOUT */
+/*****************/
 .footer {
     background-color: map-get(variables.$bg-color, dark-grey);
     color: variables.$light;

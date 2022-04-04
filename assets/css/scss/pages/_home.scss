@@ -1,6 +1,11 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
 
+/*******************/
+/* HOMEPAGE STYLE */
+/******************/
+
+// 1.Localisation form
 .localisation {
     width: 100%;
     background-color: map-get(variables.$bg-color, medium-grey);
@@ -52,6 +57,7 @@
     }
 }
 
+// 2.Explore section
 .explore {
     width: 100%;
     background-color: map-get(variables.$bg-color, light-grey);
@@ -96,6 +102,7 @@
     }
 }
 
+// 3.Functioning section (& contain: functioning-component size)
 .functioning {
     width: 100%;
     padding: variables.$padding-section;
@@ -152,6 +159,7 @@
     }
 }
 
+// 4.Restaurant section (& contain: restaurant-component size)
 .restaurant {
     width: 100%;
     background-color: map-get(variables.$bg-color, light-grey);
