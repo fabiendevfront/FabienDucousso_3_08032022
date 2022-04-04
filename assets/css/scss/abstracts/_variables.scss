@@ -1,4 +1,12 @@
+/**********/
+/* FONTS */
+/*********/
+$font-title: 'Shrikhand', cursive;
+$font-text : 'Roboto', sans-serif;
+
+/***********/
 /* COLORS */
+/**********/
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
@@ -7,26 +15,27 @@ $dark: #000000;
 $green: #008766;
 $gradient: linear-gradient(175deg, $secondary-color 10%, $primary-color 90%);
 
-// Background color map
+// 1.Background color map
 $bg-color: (
+    light: $light,
+    dark: $dark,
     light-grey: darken($light, 3.5%),
     medium-grey: darken($light, 8.2%),
     dark-grey: lighten($dark, 20.8%),
     light-green: $tertiary-color,
-    light: $light,
     light-purple: lighten($primary-color, 36.2%),
-    linear-gradient: linear-gradient(175deg, $secondary-color 10%, $primary-color 90%)
+    linear-gradient: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%)
 );
 
-/* FONTS */
-$font-title: 'Shrikhand', cursive;
-$font-text : 'Roboto', sans-serif;
-
+/**********/
 /* SIZES */
+/*********/
 $padding-section: 50px 5%;
 $margin-bt-item: 0 0 30px 0;
 
+/***************/
 /* RESPONSIVE */
+/**************/
 $breakpoints: (
     tablet: 768px,
     desktop: 992px

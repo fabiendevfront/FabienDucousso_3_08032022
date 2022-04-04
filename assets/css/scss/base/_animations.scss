@@ -1,13 +1,24 @@
-/* TRANSITIONS */
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
 
+/****************/
+/* TRANSITIONS */
+/***************/
+
+// Transition map for all in app
 $transition: (
     fast: all 0.3s ease-out,
     medium: all 0.5s ease-out,
     opacity: opacity 0.8s ease-out
 );
 
+/**************/
 /* KEYFRAMES */
+/*************/
 
+// RESTAURANTS:
+
+// 1. Foods progressive apparition on the restaurant page
 @keyframes menu-slide {
     0% {
         transform: translateY(50%);
@@ -24,6 +35,7 @@ $transition: (
     }
 }
 
+// 2. Animation map for foods apparition
 $slide-length: (
     first: menu-slide 1.3s linear 0.3s both,
     second: menu-slide 1.3s linear 0.6s both,
@@ -31,6 +43,7 @@ $slide-length: (
     fourth: menu-slide 1.3s linear 1.2s both
 );
 
+// Open the sliding block for food
 @keyframes select-slide {
     0% {
         transform: translateX(100%);
@@ -41,6 +54,7 @@ $slide-length: (
     }
 }
 
+// Close the sliding block for food
 @keyframes close-slide {
     0% {
         transform: translateX(0);
@@ -58,5 +72,79 @@ $slide-length: (
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+// HOMEPAGE:
+
+// LOADER
+
+@keyframes loader-bg {
+    0% {
+        opacity: 0.9;
+        transform: scale(1, 1);
+      }
+      65% {
+        opacity: 0.9;
+      }
+      70% {
+        opacity: 0.8;
+      }
+      80% {
+        opacity: 0.3;
+      }
+      99% {
+        opacity: 0;
+        transform: scale(1, 1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0, 0);
+      }
+}
+
+@keyframes border-rotate {
+    0%{
+        transform: rotate(0);
+        border-color: variables.$primary-color variables.$primary-color variables.$primary-color map-get(variables.$bg-color, light-purple);
+    }
+
+    33%{
+        border-color: variables.$secondary-color variables.$secondary-color variables.$secondary-color map-get(variables.$bg-color, light-purple);
+    }
+
+    50%{
+        border-color: variables.$tertiary-color variables.$tertiary-color variables.$tertiary-color map-get(variables.$bg-color, light-purple);
+    }
+
+    75%{
+        border-color: variables.$primary-color variables.$primary-color variables.$primary-color map-get(variables.$bg-color, light-purple);
+    }
+
+    90%{
+        border-color: variables.$secondary-color variables.$secondary-color variables.$secondary-color map-get(variables.$bg-color, light-purple);
+    }
+
+    100% {
+        border-color: variables.$tertiary-color variables.$tertiary-color variables.$tertiary-color map-get(variables.$bg-color, light-purple);
+        transform: rotate(1080deg);
+    }
+}
+
+@keyframes loader-icons {
+    0% {
+        transform: scale(0);
+    }
+
+    11% {
+        transform: scale(1.2);
+    }
+
+    22% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(0);
     }
 }
