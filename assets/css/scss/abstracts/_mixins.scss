@@ -38,14 +38,14 @@
 /* RESPONSIVE */
 /**************/
 
-// 1. Contain responsive breakpoint for tablet
+// 1. Contain media queries for tablet responsive
 @mixin tablet-break {
 	@media screen and (min-width: map-get(variables.$breakpoints, tablet)) {
 		@content;
 	}
 }
 
-// 2. Contain responsive breakpoint for desktop
+// 2. Contain media queries for desktop responsive
 @mixin desktop-break {
 	@media screen and (min-width: map-get(variables.$breakpoints, desktop)) {
 		@content;

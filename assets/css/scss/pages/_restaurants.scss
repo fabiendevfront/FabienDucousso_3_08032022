@@ -1,6 +1,5 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
-@use '../base/animations';
 
 /*************************/
 /* RESTAURANT PAGE STYLE */
@@ -22,7 +21,7 @@
     }
 }
 
-// 2.Menu section (& contain: menu-component size, heart size)
+// 2.Menu section (includes: menu-component size, heart size)
 .menu {
     position: relative;
     width: 100%;
@@ -109,19 +108,19 @@
         }
 
         &--first {
-            animation: map-get(animations.$slide-length, first);
+            animation: map-get(variables.$slide-length, first);
         }
 
         &--second {
-            animation: map-get(animations.$slide-length, second);
+            animation: map-get(variables.$slide-length, second);
         }
 
         &--third {
-            animation: map-get(animations.$slide-length, third);
+            animation: map-get(variables.$slide-length, third);
         }
 
         &--fourth {
-            animation: map-get(animations.$slide-length, fourth);
+            animation: map-get(variables.$slide-length, fourth);
         }
     }
 

@@ -102,7 +102,7 @@
     }
 }
 
-// 3.Functioning section (& contain: functioning-component size)
+// 3.Functioning section (includes: functioning-component size)
 .functioning {
     width: 100%;
     padding: variables.$padding-section;
@@ -159,7 +159,7 @@
     }
 }
 
-// 4.Restaurant section (& contain: restaurant-component size)
+// 4.Restaurant section (includes: restaurant-component size)
 .restaurant {
     width: 100%;
     background-color: map-get(variables.$bg-color, light-grey);

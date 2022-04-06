@@ -1,6 +1,5 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
-@use '../base/animations';
 
 /********************/
 /* BUTTON COMPONENT */
@@ -16,7 +15,7 @@
 
     &:hover {
         opacity: 0.85;
-        transition: map-get(animations.$transition, medium);
+        transition: map-get(variables.$transition, medium);
         @include mixins.box-shadow(dark);
         cursor: pointer;
     }

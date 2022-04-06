@@ -1,6 +1,5 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
-@use '../base/animations';
 
 /********************/
 /* HEART COMPONENT */
@@ -8,6 +7,7 @@
 .heart {
     position: relative;
     color: map-get(variables.$bg-color, light);
+    padding: 2px;
 
     &:hover {
 
@@ -21,7 +21,7 @@
 
         &::before,
         &::after {
-            transition: map-get(animations.$transition, opacity);
+            transition: map-get(variables.$transition, opacity);
         }
     }
 
@@ -44,11 +44,11 @@
         left: 0;
         bottom: 0;
         z-index: 1;
+        padding: 2px;
     }
 
     // 2.Heart for restaurant page
     &--menu {
-        // @include mixins.fontSize(35px);
         color: map-get(variables.$bg-color, light-grey);
     }
 }

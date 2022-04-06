@@ -1,22 +1,11 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
 
-/****************/
-/* TRANSITIONS */
-/***************/
-
-// 1.Transition map
-$transition: (
-    fast: all 0.3s ease-out,
-    medium: all 0.5s ease-out,
-    opacity: opacity 0.8s ease-out
-);
-
 /**************/
 /* KEYFRAMES */
 /*************/
 
-// HOMEPAGE:
+/* HOMEPAGE: */
 
 // 1.Disappearing loader animation
 @keyframes loader-bg {
@@ -91,7 +80,7 @@ $transition: (
     }
 }
 
-// RESTAURANTS:
+/* RESTAURANTS: */
 
 // 1.Foods progressive apparition on the restaurant page
 @keyframes menu-slide {
@@ -110,15 +99,7 @@ $transition: (
     }
 }
 
-// 2.Animation map for foods apparition
-$slide-length: (
-    first: menu-slide 1.3s linear 0.3s both,
-    second: menu-slide 1.3s linear 0.6s both,
-    third: menu-slide 1.3s linear 0.9s both,
-    fourth: menu-slide 1.3s linear 1.2s both
-);
-
-// 3.Open the sliding block for food
+// 2.Open the sliding block for food
 @keyframes select-slide {
     0% {
         transform: translateX(100%);
@@ -129,7 +110,7 @@ $slide-length: (
     }
 }
 
-// 4.Close the sliding block for food
+// 3.Close the sliding block for food
 @keyframes close-slide {
     0% {
         transform: translateX(0);
@@ -140,7 +121,7 @@ $slide-length: (
     }
 }
 
-// 5.Icon rotation in sliding block for food
+// 4.Icon rotation in sliding block for food
 @keyframes icon-rotate {
     0% {
         transform: rotate(0);

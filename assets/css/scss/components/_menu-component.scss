@@ -1,6 +1,5 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
-@use '../base/animations';
 
 /*******************/
 /* MENU COMPONENT */
@@ -18,7 +17,7 @@
 
     &:hover {
         padding-right: 90px;
-        transition: map-get(animations.$transition, medium);
+        transition: map-get(variables.$transition, medium);
 
         .menu-comp__select {
             animation: select-slide 0.5s linear both;
@@ -31,7 +30,7 @@
 
     &:not(:hover) {
         padding-right: 15px;
-        transition: map-get(animations.$transition, medium);
+        transition: map-get(variables.$transition, medium);
 
         .menu-comp__select {
             animation: close-slide 0.5s linear both;
@@ -45,16 +44,18 @@
         white-space: nowrap;
     }
 
-    &__title {
-        margin: 0 0 8px 0;
+    &__title,
+    &__subtitle {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
+    &__title {
+        margin: 0 0 8px 0;
+    }
+
     &__subtitle {
         margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     &__price {

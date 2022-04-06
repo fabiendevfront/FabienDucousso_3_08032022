@@ -15,7 +15,7 @@ $dark: #000000;
 $green: #008766;
 $gradient: linear-gradient(175deg, $secondary-color 10%, $primary-color 90%);
 
-// 1.Background color map
+// 1.Background colors map
 $bg-color: (
     light: $light,
     dark: $dark,
@@ -28,7 +28,6 @@ $bg-color: (
 );
 
 // 2.Loader container border colors map
-
 $loader-border-color: (
     b-purple: $primary-color $primary-color $primary-color map-get($bg-color, light-purple),
     b-pink: $secondary-color $secondary-color $secondary-color map-get($bg-color, light-purple),
@@ -41,9 +40,34 @@ $loader-border-color: (
 $padding-section: 50px 5%;
 $margin-bt-item: 0 0 30px 0;
 
+/****************/
+/* TRANSITIONS */
+/***************/
+
+// 1.Transition map
+$transition: (
+    fast: all 0.3s ease-out,
+    medium: all 0.5s ease-out,
+    opacity: opacity 0.8s ease-out
+);
+
+/**************/
+/* ANIMATIONS */
+/**************/
+
+// 1.Animation map for foods apparition
+$slide-length: (
+    first: menu-slide 1.3s linear 0.3s both,
+    second: menu-slide 1.3s linear 0.6s both,
+    third: menu-slide 1.3s linear 0.9s both,
+    fourth: menu-slide 1.3s linear 1.2s both
+);
+
 /***************/
 /* RESPONSIVE */
 /**************/
+
+// 1.Breakpoints map for responsive
 $breakpoints: (
     tablet: 768px,
     desktop: 992px

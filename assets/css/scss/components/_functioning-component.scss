@@ -1,6 +1,5 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
-@use '../base/animations';
 
 /**************************/
 /* FUNCTIONING COMPONENT */
@@ -20,8 +19,8 @@
 
     &:hover {
         .func-comp__desc {
-            transition: map-get(animations.$transition, medium);
             background-color: map-get(variables.$bg-color, light-purple);
+            transition: map-get(variables.$transition, medium);
             @include mixins.box-shadow(dark);
         }
 

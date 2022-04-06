@@ -1,6 +1,5 @@
 @use '../abstracts/mixins';
 @use '../abstracts/variables';
-@use '../base/animations';
 
 /************************/
 /* RESTAURANT COMPONENT */
@@ -12,11 +11,11 @@
     @include mixins.box-shadow(light);
 
     &:hover {
-        transition: map-get(animations.$transition, medium);
+        transition: map-get(variables.$transition, medium);
         @include mixins.box-shadow(dark);
 
         img {
-            transition: map-get(animations.$transition, opacity);
+            transition: map-get(variables.$transition, opacity);
             opacity: 0.7;
         }
     }
