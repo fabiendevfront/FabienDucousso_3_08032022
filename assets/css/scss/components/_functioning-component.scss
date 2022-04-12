@@ -7,6 +7,7 @@
 .func-comp {
     display: flex;
     align-items: center;
+    cursor: pointer;
     @include mixins.fontSize(18px);
 
     @include mixins.tablet-break {
